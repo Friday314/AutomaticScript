@@ -68,6 +68,7 @@
             this.MinimizeBox = false;
             this.Name = "AutomaticScript";
             this.Text = "AutomaticScript";
+            this.Load += new System.EventHandler(this.AutomaticScript_Load);
             this.日志输出.ResumeLayout(false);
             this.日志输出.PerformLayout();
             this.ResumeLayout(false);

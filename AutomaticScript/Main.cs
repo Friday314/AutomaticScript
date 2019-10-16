@@ -16,5 +16,10 @@ namespace AutomaticScript
         {
             InitializeComponent();
         }
+
+        private void AutomaticScript_Load(object sender, EventArgs e)
+        {
+            textLog.ReadOnly = true;
+        }
     }
 }
