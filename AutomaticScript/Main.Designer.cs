@@ -28,56 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.日志输出 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutomaticScript));
+            this.状态栏 = new System.Windows.Forms.GroupBox();
+            this.日志栏 = new System.Windows.Forms.GroupBox();
             this.textLog = new System.Windows.Forms.TextBox();
-            this.日志输出.SuspendLayout();
+            this.日志栏.SuspendLayout();
             this.SuspendLayout();
             // 
-            // 日志输出
+            // 状态栏
             // 
-            this.日志输出.Controls.Add(this.textLog);
-            this.日志输出.Location = new System.Drawing.Point(272, 13);
-            this.日志输出.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.日志输出.Name = "日志输出";
-            this.日志输出.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.日志输出.Size = new System.Drawing.Size(382, 326);
-            this.日志输出.TabIndex = 0;
-            this.日志输出.TabStop = false;
-            this.日志输出.Text = "日志输出";
+            this.状态栏.Location = new System.Drawing.Point(232, 12);
+            this.状态栏.Name = "状态栏";
+            this.状态栏.Size = new System.Drawing.Size(179, 374);
+            this.状态栏.TabIndex = 0;
+            this.状态栏.TabStop = false;
+            this.状态栏.Text = "状态栏";
+            // 
+            // 日志栏
+            // 
+            this.日志栏.Controls.Add(this.textLog);
+            this.日志栏.Location = new System.Drawing.Point(417, 12);
+            this.日志栏.Name = "日志栏";
+            this.日志栏.Size = new System.Drawing.Size(246, 374);
+            this.日志栏.TabIndex = 1;
+            this.日志栏.TabStop = false;
+            this.日志栏.Text = "日志栏";
             // 
             // textLog
             // 
-            this.textLog.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textLog.Location = new System.Drawing.Point(6, 24);
-            this.textLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textLog.Location = new System.Drawing.Point(6, 20);
             this.textLog.Multiline = true;
             this.textLog.Name = "textLog";
-            this.textLog.Size = new System.Drawing.Size(370, 294);
+            this.textLog.Size = new System.Drawing.Size(234, 348);
             this.textLog.TabIndex = 0;
-            this.textLog.Text = "开始程序：Shift + D\r\n停止程序：Shift + F";
             // 
             // AutomaticScript
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 352);
-            this.Controls.Add(this.日志输出);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(672, 391);
+            this.Controls.Add(this.日志栏);
+            this.Controls.Add(this.状态栏);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AutomaticScript";
             this.Text = "AutomaticScript";
             this.Load += new System.EventHandler(this.AutomaticScript_Load);
-            this.日志输出.ResumeLayout(false);
-            this.日志输出.PerformLayout();
+            this.日志栏.ResumeLayout(false);
+            this.日志栏.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox 日志输出;
+        private System.Windows.Forms.GroupBox 状态栏;
+        private System.Windows.Forms.GroupBox 日志栏;
         private System.Windows.Forms.TextBox textLog;
     }
 }
