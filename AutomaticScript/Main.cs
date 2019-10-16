@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AutomaticScript
 {
-    public partial class Form1 : Form
+    public partial class AutomaticScript : Form
     {
-        public Form1()
+        public AutomaticScript()
         {
             InitializeComponent();
         }
