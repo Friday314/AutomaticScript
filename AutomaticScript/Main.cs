@@ -41,14 +41,34 @@ namespace AutomaticScript
             HotKey.UnregisterHotKey(Handle, 101);
         }
 
+        static int _but师门 = 0;
         private void but师门_Click(object sender, EventArgs e)
         {
-            but师门.BackColor = System.Drawing.Color.Olive;
+            if (_but师门 == 0)
+            {
+                but师门.BackColor = System.Drawing.Color.Olive;
+                _but师门 = 1;
+            }
+            else if (_but师门 == 1)
+            {
+                but师门.BackColor = System.Drawing.Color.LightGray;
+                _but师门 = 0;
+            }
         }
 
+        static int _but挖图 = 0;
         private void but挖图_Click(object sender, EventArgs e)
         {
-            but挖图.BackColor = System.Drawing.Color.Olive;
+            if (_but挖图 == 0)
+            {
+                but挖图.BackColor = System.Drawing.Color.Olive;
+                _but挖图 = 1;
+            }
+            else if (_but挖图 == 1)
+            {
+                but挖图.BackColor = System.Drawing.Color.LightGray;
+                _but挖图 = 0;
+            }
         }
 
         /// 监视Windows消息

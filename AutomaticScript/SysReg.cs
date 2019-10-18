@@ -24,7 +24,6 @@ namespace AutomaticScript
         /// <returns>返回注册信息</returns>
         public string Sysreg()
         {
-            //int Reg = dd.DM.Reg("Friday314516f00df89fdf1b29d9b99310251d3ec", "2ew8uHU7");
             int Reg = Convert.ToInt32(ddr("Reg", new object[] { "Friday314516f00df89fdf1b29d9b99310251d3ec", "2ew8uHU7" }));
             if (Reg == -1)
             {
