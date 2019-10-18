@@ -35,7 +35,19 @@ namespace AutomaticScript
         {
             OpenPackage_道具();
             //鼠标移动到行囊
-            dd("MoveToEx", new object[] { 769, 121, 879, 157 });
+            dd("MoveToEx", new object[] { 1143, 17, 1183, 66 });
+            dd("LeftClick");
+            //延时
+            System.Threading.Thread.Sleep(500);
+        }
+
+        /// <summary>
+        /// 打开人物属性
+        /// </summary>
+        public void Open人物属性()
+        {
+            //鼠标移动到人物头像
+            dd("MoveToEx", new object[] { 1133, 18, 1185, 68 });
             dd("LeftClick");
             //延时
             System.Threading.Thread.Sleep(500);

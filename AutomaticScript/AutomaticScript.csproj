@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaiDuAPI.cs" />
+    <Compile Include="CaptureImage.cs" />
     <Compile Include="DmReg.cs" />
     <Compile Include="HotKey.cs" />
     <Compile Include="InitiPackage.cs" />

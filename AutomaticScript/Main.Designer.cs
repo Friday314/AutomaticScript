@@ -38,6 +38,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.日志栏 = new System.Windows.Forms.GroupBox();
@@ -58,11 +58,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.labTitleName = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lab人物门派 = new System.Windows.Forms.Label();
+            this.lab人物名称 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.but师门 = new System.Windows.Forms.Button();
             this.but挖图 = new System.Windows.Forms.Button();
+            this.but师门 = new System.Windows.Forms.Button();
             this.状态栏.SuspendLayout();
             this.日志栏.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -176,6 +176,24 @@
             this.label25.TabIndex = 15;
             this.label25.Text = "长寿村合成旗：";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "宠物蓝量:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "宠物血量:";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -272,24 +290,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "金币:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "宠物蓝量:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "宠物血量:";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -364,23 +364,23 @@
             this.labTitleName.TabIndex = 5;
             this.labTitleName.Text = "label12";
             // 
-            // label14
+            // lab人物门派
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(87, 58);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 12);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "label14";
+            this.lab人物门派.AutoSize = true;
+            this.lab人物门派.Location = new System.Drawing.Point(87, 58);
+            this.lab人物门派.Name = "lab人物门派";
+            this.lab人物门派.Size = new System.Drawing.Size(47, 12);
+            this.lab人物门派.TabIndex = 7;
+            this.lab人物门派.Text = "label14";
             // 
-            // label15
+            // lab人物名称
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(87, 35);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(47, 12);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "label15";
+            this.lab人物名称.AutoSize = true;
+            this.lab人物名称.Location = new System.Drawing.Point(87, 35);
+            this.lab人物名称.Name = "lab人物名称";
+            this.lab人物名称.Size = new System.Drawing.Size(47, 12);
+            this.lab人物名称.TabIndex = 8;
+            this.lab人物名称.Text = "label15";
             // 
             // groupBox1
             // 
@@ -393,16 +393,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选择任务";
             // 
-            // but师门
-            // 
-            this.but师门.Location = new System.Drawing.Point(20, 20);
-            this.but师门.Name = "but师门";
-            this.but师门.Size = new System.Drawing.Size(75, 23);
-            this.but师门.TabIndex = 0;
-            this.but师门.Text = "师门";
-            this.but师门.UseVisualStyleBackColor = true;
-            this.but师门.Click += new System.EventHandler(this.but师门_Click);
-            // 
             // but挖图
             // 
             this.but挖图.Location = new System.Drawing.Point(118, 20);
@@ -413,14 +403,24 @@
             this.but挖图.UseVisualStyleBackColor = true;
             this.but挖图.Click += new System.EventHandler(this.but挖图_Click);
             // 
+            // but师门
+            // 
+            this.but师门.Location = new System.Drawing.Point(20, 20);
+            this.but师门.Name = "but师门";
+            this.but师门.Size = new System.Drawing.Size(75, 23);
+            this.but师门.TabIndex = 0;
+            this.but师门.Text = "师门";
+            this.but师门.UseVisualStyleBackColor = true;
+            this.but师门.Click += new System.EventHandler(this.but师门_Click);
+            // 
             // AutomaticScript
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 391);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lab人物名称);
+            this.Controls.Add(this.lab人物门派);
             this.Controls.Add(this.labTitleName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -465,8 +465,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label labTitleName;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lab人物门派;
+        private System.Windows.Forms.Label lab人物名称;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
