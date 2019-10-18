@@ -88,6 +88,8 @@ namespace AutomaticScript
                     {
                         case 100:    //按下的是Shift+S
                             //软开启，界面初始化
+                            Initi界面();
+                            //人物初始化
                             InitiWindow();
                             break;
                         case 101:    //按下的是Shift+D
@@ -101,37 +103,44 @@ namespace AutomaticScript
         /// <summary>
         /// 界面初始化
         /// </summary>
+        public void Initi界面()
+        {
+            int i = 0;
+            if (i == 0)
+            {
+                //输出版本号
+                textLog.AppendText("\r\n插件版本:" + sr.Ver() + "\r\n");
+                //网络注册
+                textLog.AppendText(sr.Sysreg().ToString() + "\r\n");
+                //初始化临界
+                textLog.AppendText(sr.InitCri() + "\r\n");
+                //确认获得窗体名称
+                labTitleName.Text = sr.getWindTitle();
+                //窗口绑定
+                textLog.AppendText(sr.bindWindowEx() + "\r\n");
+
+                i = 1;
+            }
+        }
+
+        /// <summary>
+        /// 人物初始化
+        /// </summary>
         public void InitiWindow()
         {
             int i = 0;
             if (i == 0)
             {
-                Initi赋值();
-
                 //获得人物名称及门派
                 mo.Open人物属性();
                 //204,95,387,127,"\Image\人物名称.bmp"
-                ci.Capture(new object[] { 206, 95, 380, 128, "./Image/人物名称.bmp" });
+                ci.Capture(new object[] { 200, 94, 376, 127, "./Image/人物名称.bmp" });
                 lab人物名称.Text = baidu.Ocr_Baidu("./Image/人物名称.bmp");
                 ci.Capture(new object[] { 152, 157, 193, 284, "./Image/人物门派.bmp" });
                 lab人物门派.Text = baidu.Ocr_Baidu("./Image/人物门派.bmp");
 
                 i = 1;
             }
-        }
-
-        public void Initi赋值()
-        {
-            //输出版本号
-            textLog.AppendText("\r\n插件版本:" + sr.Ver() + "\r\n");
-            //网络注册
-            textLog.AppendText(sr.Sysreg().ToString() + "\r\n");
-            //初始化临界
-            textLog.AppendText(sr.InitCri() + "\r\n");
-            //确认获得窗体名称
-            labTitleName.Text = sr.getWindTitle();
-            //窗口绑定
-            textLog.AppendText(sr.bindWindowEx() + "\r\n");
         }
     }
 }

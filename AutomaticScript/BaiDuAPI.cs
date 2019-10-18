@@ -15,7 +15,7 @@ namespace AutomaticScript
     class BaiDuAPI
     {
         // 设置APPID/AK/SK
-        static string APP_ID = "17555400";
+        //static string APP_ID = "17555400";
         static string API_KEY = "riHcQfvEkl6apptzEIBBOW0w";
         static string SECRET_KEY = "WqQykyN3Ndp1gMWlRaH4LkTLSUzRo8wm";
 

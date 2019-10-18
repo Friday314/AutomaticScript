@@ -47,7 +47,7 @@ namespace AutomaticScript
         public void Open人物属性()
         {
             //鼠标移动到人物头像
-            dd("MoveToEx", new object[] { 1133, 18, 1185, 68 });
+            dd("MoveTo", new object[] { 1157,44 });
             dd("LeftClick");
             //延时
             System.Threading.Thread.Sleep(500);
