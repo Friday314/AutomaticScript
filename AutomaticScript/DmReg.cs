@@ -39,7 +39,7 @@ namespace AutomaticScript
         }
 
         /// <summary>
-        /// 调用大漠，无返回值
+        /// 调用大漠，无返回值，带参。
         /// </summary>
         /// <param name="name">方法名称</param>
         /// <param name="args">方法参数</param>
@@ -62,7 +62,7 @@ namespace AutomaticScript
         }
 
         /// <summary>
-        /// 调用大漠，有返回值
+        /// 调用大漠，有返回值，带参。
         /// </summary>
         /// <param name="name">方法名称</param>
         /// <param name="args">方法参数</param>

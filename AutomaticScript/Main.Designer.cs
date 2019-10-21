@@ -30,23 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutomaticScript));
             this.状态栏 = new System.Windows.Forms.GroupBox();
+            this.lab宠物忠诚 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lab人物蓝量 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lab宠物蓝量 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lab人物血量 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lab宠物血量 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,23 +72,25 @@
             // 
             // 状态栏
             // 
+            this.状态栏.Controls.Add(this.lab宠物忠诚);
+            this.状态栏.Controls.Add(this.label3);
             this.状态栏.Controls.Add(this.label27);
             this.状态栏.Controls.Add(this.label28);
             this.状态栏.Controls.Add(this.label21);
             this.状态栏.Controls.Add(this.label22);
             this.状态栏.Controls.Add(this.label26);
-            this.状态栏.Controls.Add(this.label17);
+            this.状态栏.Controls.Add(this.lab人物蓝量);
             this.状态栏.Controls.Add(this.label24);
             this.状态栏.Controls.Add(this.label25);
-            this.状态栏.Controls.Add(this.label3);
-            this.状态栏.Controls.Add(this.label2);
-            this.状态栏.Controls.Add(this.label19);
             this.状态栏.Controls.Add(this.label10);
+            this.状态栏.Controls.Add(this.label5);
+            this.状态栏.Controls.Add(this.label19);
+            this.状态栏.Controls.Add(this.lab宠物蓝量);
             this.状态栏.Controls.Add(this.label7);
             this.状态栏.Controls.Add(this.label23);
-            this.状态栏.Controls.Add(this.label18);
+            this.状态栏.Controls.Add(this.lab人物血量);
             this.状态栏.Controls.Add(this.label6);
-            this.状态栏.Controls.Add(this.label5);
+            this.状态栏.Controls.Add(this.lab宠物血量);
             this.状态栏.Controls.Add(this.label20);
             this.状态栏.Controls.Add(this.label16);
             this.状态栏.Controls.Add(this.label4);
@@ -99,11 +103,30 @@
             this.状态栏.TabStop = false;
             this.状态栏.Text = "状态栏";
             // 
+            // lab宠物忠诚
+            // 
+            this.lab宠物忠诚.AutoSize = true;
+            this.lab宠物忠诚.ForeColor = System.Drawing.Color.Red;
+            this.lab宠物忠诚.Location = new System.Drawing.Point(125, 110);
+            this.lab宠物忠诚.Name = "lab宠物忠诚";
+            this.lab宠物忠诚.Size = new System.Drawing.Size(11, 12);
+            this.lab宠物忠诚.TabIndex = 2;
+            this.lab宠物忠诚.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "宠物忠诚";
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(135, 254);
+            this.label27.Location = new System.Drawing.Point(125, 270);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(11, 12);
             this.label27.TabIndex = 9;
@@ -112,7 +135,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 161);
+            this.label28.Location = new System.Drawing.Point(11, 178);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(47, 12);
             this.label28.TabIndex = 10;
@@ -122,7 +145,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(135, 231);
+            this.label21.Location = new System.Drawing.Point(125, 247);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(11, 12);
             this.label21.TabIndex = 11;
@@ -132,7 +155,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(135, 208);
+            this.label22.Location = new System.Drawing.Point(125, 224);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(11, 12);
             this.label22.TabIndex = 12;
@@ -142,26 +165,26 @@
             // 
             this.label26.AutoSize = true;
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(135, 185);
+            this.label26.Location = new System.Drawing.Point(125, 201);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(11, 12);
             this.label26.TabIndex = 16;
             this.label26.Text = "0";
             // 
-            // label17
+            // lab人物蓝量
             // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(135, 46);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(11, 12);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "0";
+            this.lab人物蓝量.AutoSize = true;
+            this.lab人物蓝量.ForeColor = System.Drawing.Color.Red;
+            this.lab人物蓝量.Location = new System.Drawing.Point(125, 43);
+            this.lab人物蓝量.Name = "lab人物蓝量";
+            this.lab人物蓝量.Size = new System.Drawing.Size(11, 12);
+            this.lab人物蓝量.TabIndex = 9;
+            this.lab人物蓝量.Text = "0";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(11, 254);
+            this.label24.Location = new System.Drawing.Point(11, 270);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(83, 12);
             this.label24.TabIndex = 14;
@@ -170,55 +193,55 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(11, 231);
+            this.label25.Location = new System.Drawing.Point(11, 247);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(89, 12);
             this.label25.TabIndex = 15;
             this.label25.Text = "长寿村合成旗：";
             // 
-            // label3
+            // label10
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "宠物蓝量:";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 88);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 12);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "宠物蓝量:";
             // 
-            // label2
+            // label5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "宠物血量:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(11, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 12);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "宠物血量:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(135, 161);
+            this.label19.Location = new System.Drawing.Point(125, 178);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(11, 12);
             this.label19.TabIndex = 9;
             this.label19.Text = "0";
             // 
-            // label10
+            // lab宠物蓝量
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(135, 91);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(11, 12);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "0";
+            this.lab宠物蓝量.AutoSize = true;
+            this.lab宠物蓝量.ForeColor = System.Drawing.Color.Red;
+            this.lab宠物蓝量.Location = new System.Drawing.Point(125, 88);
+            this.lab宠物蓝量.Name = "lab宠物蓝量";
+            this.lab宠物蓝量.Size = new System.Drawing.Size(11, 12);
+            this.lab宠物蓝量.TabIndex = 9;
+            this.lab宠物蓝量.Text = "0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(135, 115);
+            this.label7.Location = new System.Drawing.Point(125, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(11, 12);
             this.label7.TabIndex = 6;
@@ -227,46 +250,46 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 208);
+            this.label23.Location = new System.Drawing.Point(11, 224);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(83, 12);
             this.label23.TabIndex = 13;
             this.label23.Text = "傲来国合成旗:";
             // 
-            // label18
+            // lab人物血量
             // 
-            this.label18.AutoSize = true;
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(135, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(11, 12);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "0";
+            this.lab人物血量.AutoSize = true;
+            this.lab人物血量.ForeColor = System.Drawing.Color.Red;
+            this.lab人物血量.Location = new System.Drawing.Point(125, 22);
+            this.lab人物血量.Name = "lab人物血量";
+            this.lab人物血量.Size = new System.Drawing.Size(11, 12);
+            this.lab人物血量.TabIndex = 10;
+            this.lab人物血量.Text = "0";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(135, 138);
+            this.label6.Location = new System.Drawing.Point(125, 155);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(11, 12);
             this.label6.TabIndex = 5;
             this.label6.Text = "0";
             // 
-            // label5
+            // lab宠物血量
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(135, 68);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(11, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "0";
+            this.lab宠物血量.AutoSize = true;
+            this.lab宠物血量.ForeColor = System.Drawing.Color.Red;
+            this.lab宠物血量.Location = new System.Drawing.Point(125, 65);
+            this.lab宠物血量.Name = "lab宠物血量";
+            this.lab宠物血量.Size = new System.Drawing.Size(11, 12);
+            this.lab宠物血量.TabIndex = 4;
+            this.lab宠物血量.Text = "0";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 185);
+            this.label20.Location = new System.Drawing.Point(11, 201);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(83, 12);
             this.label20.TabIndex = 10;
@@ -275,7 +298,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 46);
+            this.label16.Location = new System.Drawing.Point(11, 43);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(59, 12);
             this.label16.TabIndex = 10;
@@ -284,7 +307,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 115);
+            this.label4.Location = new System.Drawing.Point(11, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 12);
             this.label4.TabIndex = 3;
@@ -302,7 +325,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 138);
+            this.label1.Location = new System.Drawing.Point(11, 155);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 0;
@@ -449,16 +472,16 @@
         private System.Windows.Forms.GroupBox 状态栏;
         private System.Windows.Forms.GroupBox 日志栏;
         private System.Windows.Forms.TextBox textLog;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lab宠物蓝量;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lab宠物血量;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lab人物蓝量;
+        private System.Windows.Forms.Label lab人物血量;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label8;
@@ -480,6 +503,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button but挖图;
         private System.Windows.Forms.Button but师门;
+        private System.Windows.Forms.Label lab宠物忠诚;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -11,6 +11,7 @@ namespace AutomaticScript
         public void Capture(object[] args)
         {
             dd("Capture", args);
+            System.Threading.Thread.Sleep(300);
         }
     }
 }

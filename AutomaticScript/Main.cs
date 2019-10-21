@@ -87,12 +87,22 @@ namespace AutomaticScript
                     switch (m.WParam.ToInt32())
                     {
                         case 100:    //按下的是Shift+S
+
                             //软开启，界面初始化
                             Initi界面();
-                            //人物初始化
-                            InitiWindow();
+                            //人物名称及门派初始化
+                            Initi人物();
+                            //人物状态初始化
+                            Initi人物状态();
+                            //宠物状态初始化
+                            Initi宠物状态();
+
                             break;
                         case 101:    //按下的是Shift+D
+
+                            //窗口解绑
+                            textLog.AppendText(sr.UnBindWindow());
+
                             break;
                     }
                     break;
@@ -126,18 +136,79 @@ namespace AutomaticScript
         /// <summary>
         /// 人物初始化
         /// </summary>
-        public void InitiWindow()
+        public void Initi人物()
         {
             int i = 0;
             if (i == 0)
             {
                 //获得人物名称及门派
                 mo.Open人物属性();
-                //204,95,387,127,"\Image\人物名称.bmp"
+
+                //截图 人物名称
                 ci.Capture(new object[] { 200, 94, 376, 127, "./Image/人物名称.bmp" });
+                //百度识字
                 lab人物名称.Text = baidu.Ocr_Baidu("./Image/人物名称.bmp");
+                // 截图 人物门派
                 ci.Capture(new object[] { 152, 157, 193, 284, "./Image/人物门派.bmp" });
+                //百度识字
                 lab人物门派.Text = baidu.Ocr_Baidu("./Image/人物门派.bmp");
+
+                //关闭人物属性面板
+                mo.TurnOff(new object[] { 1073, 52 });
+
+                i = 1;
+            }
+        }
+
+        /// <summary>
+        /// 人物状态初始化
+        /// </summary>
+        public void Initi人物状态()
+        {
+            int i = 0;
+            if (i == 0)
+            {
+                mo.Open人物状态();
+
+                //截图 人物血量
+                ci.Capture(new object[] { 1001, 151, 1223, 183, "./Image/人物血量.bmp" });
+                lab人物血量.Text = baidu.Ocr_Baidu("./Image/人物血量.bmp");
+
+                //截图 人物蓝量
+                ci.Capture(new object[] { 1004, 181, 1256, 212, "./Image/人物蓝量.bmp" });
+                lab人物蓝量.Text = baidu.Ocr_Baidu("./Image/人物蓝量.bmp");
+
+                //关闭状态面板
+                mo.TurnOff(new object[] { 1131, 273 });
+
+                i = 1;
+            }
+        }
+
+        /// <summary>
+        /// 宠物状态初始化
+        /// </summary>
+        public void Initi宠物状态()
+        {
+            int i = 0;
+            if (i == 0)
+            {
+                mo.Open宠物状态();
+
+                //截图 宠物血量
+                ci.Capture(new object[] { 810, 151, 1043, 183, "./Image/宠物血量.bmp" });
+                lab宠物血量.Text = baidu.Ocr_Baidu("./Image/宠物血量.bmp");
+
+                //截图 宠物蓝量
+                ci.Capture(new object[] { 812, 182, 1028, 212, "./Image/宠物蓝量.bmp" });
+                lab宠物蓝量.Text = baidu.Ocr_Baidu("./Image/宠物蓝量.bmp");
+
+                //截图 人物蓝量
+                //ci.Capture(new object[] { 1004, 181, 1256, 212, "./Image/人物蓝量.bmp" });
+                //lab人物蓝量.Text = baidu.Ocr_Baidu("./Image/人物蓝量.bmp");
+
+                //关闭状态面板
+                mo.TurnOff(new object[] { 1131, 273 });
 
                 i = 1;
             }

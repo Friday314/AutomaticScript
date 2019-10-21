@@ -12,6 +12,19 @@ namespace AutomaticScript
     class MoveOpen:DmReg
     {
         /// <summary>
+        /// 关闭面板
+        /// </summary>
+        /// <param name="args"></param>
+        public void TurnOff(object[] args)
+        {
+            //鼠标移动到关闭位置
+            dd("MoveTo", args);
+            dd("LeftClick");
+            //延时
+            System.Threading.Thread.Sleep(500);
+        }
+
+        /// <summary>
         /// 打开道具
         /// </summary>
         public void OpenPackage_道具()
@@ -48,6 +61,27 @@ namespace AutomaticScript
         {
             //鼠标移动到人物头像
             dd("MoveTo", new object[] { 1157,44 });
+            dd("LeftClick");
+            //延时
+            System.Threading.Thread.Sleep(500);
+        }
+
+        /// <summary>
+        /// 打开人物状态
+        /// </summary>
+        public void Open人物状态()
+        {
+            //鼠标移动到人物血条
+            dd("MoveTo", new object[] { 1247, 22 });
+            dd("LeftClick");
+            //延时
+            System.Threading.Thread.Sleep(500);
+        }
+
+        public void Open宠物状态()
+        {
+            //鼠标移动到宠物状态
+            dd("MoveTo", new object[] { 1087, 21 });
             dd("LeftClick");
             //延时
             System.Threading.Thread.Sleep(500);

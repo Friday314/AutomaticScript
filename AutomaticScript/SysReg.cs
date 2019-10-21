@@ -110,5 +110,20 @@ namespace AutomaticScript
             }
             return "窗口绑定成功";
         }
+
+        /// <summary>
+        /// 窗口解绑
+        /// </summary>
+        /// <returns></returns>
+        public string UnBindWindow()
+        {
+            int i = Convert.ToInt32(ddr("UnBindWindow"));
+            System.Threading.Thread.Sleep(1000);
+            if (i != 1)
+            {
+                return "窗口未解绑，请再次执行解绑";
+            }
+            return "窗口已解绑，可以关闭软件";
+        }
     }
 }
