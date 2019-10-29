@@ -89,6 +89,7 @@
     <Compile Include="MoveOpen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowValue.cs" />
     <Compile Include="SysReg.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

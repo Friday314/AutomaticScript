@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,6 +44,11 @@ namespace AutomaticScript
             //注销Id号为100的热键设定
             HotKey.UnregisterHotKey(Handle, 100);
             HotKey.UnregisterHotKey(Handle, 101);
+
+            //创建一个线程用来更新窗口控件
+            Thread showValue = new Thread(_Show);
+            //更新控件参数
+            showValue.Start();
         }
 
         static int _but师门 = 0;
@@ -110,6 +116,9 @@ namespace AutomaticScript
             base.WndProc(ref m);
         }
 
+        public void _Show()
+        { }
+
         /// <summary>
         /// 界面初始化
         /// </summary>
@@ -125,7 +134,7 @@ namespace AutomaticScript
                 //初始化临界
                 textLog.AppendText(sr.InitCri() + "\r\n");
                 //确认获得窗体名称
-                labTitleName.Text = sr.getWindTitle();
+                lab窗口名称.Text = sr.getWindTitle();
                 //窗口绑定
                 textLog.AppendText(sr.bindWindowEx() + "\r\n");
 
@@ -151,7 +160,7 @@ namespace AutomaticScript
                 // 截图 人物门派
                 ci.Capture(new object[] { 152, 157, 193, 284, "./Image/人物门派.bmp" });
                 //百度识字
-                lab人物门派.Text = baidu.Ocr_Baidu("./Image/人物门派.bmp");
+                lab人物师门.Text = baidu.Ocr_Baidu("./Image/人物门派.bmp");
 
                 //关闭人物属性面板
                 mo.TurnOff(new object[] { 1073, 52 });

@@ -32,22 +32,22 @@
             this.状态栏 = new System.Windows.Forms.GroupBox();
             this.lab宠物忠诚 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lab朱紫旗 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lab长寿旗 = new System.Windows.Forms.Label();
+            this.lab傲来旗 = new System.Windows.Forms.Label();
+            this.lab长安旗 = new System.Windows.Forms.Label();
             this.lab人物蓝量 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lab飞行符 = new System.Windows.Forms.Label();
             this.lab宠物蓝量 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lab金币 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.lab人物血量 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lab摄药香 = new System.Windows.Forms.Label();
             this.lab宠物血量 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -59,8 +59,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.labTitleName = new System.Windows.Forms.Label();
-            this.lab人物门派 = new System.Windows.Forms.Label();
+            this.lab窗口名称 = new System.Windows.Forms.Label();
+            this.lab人物师门 = new System.Windows.Forms.Label();
             this.lab人物名称 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.but挖图 = new System.Windows.Forms.Button();
@@ -74,22 +74,22 @@
             // 
             this.状态栏.Controls.Add(this.lab宠物忠诚);
             this.状态栏.Controls.Add(this.label3);
-            this.状态栏.Controls.Add(this.label27);
+            this.状态栏.Controls.Add(this.lab朱紫旗);
             this.状态栏.Controls.Add(this.label28);
-            this.状态栏.Controls.Add(this.label21);
-            this.状态栏.Controls.Add(this.label22);
-            this.状态栏.Controls.Add(this.label26);
+            this.状态栏.Controls.Add(this.lab长寿旗);
+            this.状态栏.Controls.Add(this.lab傲来旗);
+            this.状态栏.Controls.Add(this.lab长安旗);
             this.状态栏.Controls.Add(this.lab人物蓝量);
             this.状态栏.Controls.Add(this.label24);
             this.状态栏.Controls.Add(this.label25);
             this.状态栏.Controls.Add(this.label10);
             this.状态栏.Controls.Add(this.label5);
-            this.状态栏.Controls.Add(this.label19);
+            this.状态栏.Controls.Add(this.lab飞行符);
             this.状态栏.Controls.Add(this.lab宠物蓝量);
-            this.状态栏.Controls.Add(this.label7);
+            this.状态栏.Controls.Add(this.lab金币);
             this.状态栏.Controls.Add(this.label23);
             this.状态栏.Controls.Add(this.lab人物血量);
-            this.状态栏.Controls.Add(this.label6);
+            this.状态栏.Controls.Add(this.lab摄药香);
             this.状态栏.Controls.Add(this.lab宠物血量);
             this.状态栏.Controls.Add(this.label20);
             this.状态栏.Controls.Add(this.label16);
@@ -122,15 +122,15 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "宠物忠诚";
             // 
-            // label27
+            // lab朱紫旗
             // 
-            this.label27.AutoSize = true;
-            this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(125, 270);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(11, 12);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "0";
+            this.lab朱紫旗.AutoSize = true;
+            this.lab朱紫旗.ForeColor = System.Drawing.Color.Red;
+            this.lab朱紫旗.Location = new System.Drawing.Point(125, 270);
+            this.lab朱紫旗.Name = "lab朱紫旗";
+            this.lab朱紫旗.Size = new System.Drawing.Size(11, 12);
+            this.lab朱紫旗.TabIndex = 9;
+            this.lab朱紫旗.Text = "0";
             // 
             // label28
             // 
@@ -141,35 +141,35 @@
             this.label28.TabIndex = 10;
             this.label28.Text = "飞行符:";
             // 
-            // label21
+            // lab长寿旗
             // 
-            this.label21.AutoSize = true;
-            this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(125, 247);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(11, 12);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "0";
+            this.lab长寿旗.AutoSize = true;
+            this.lab长寿旗.ForeColor = System.Drawing.Color.Red;
+            this.lab长寿旗.Location = new System.Drawing.Point(125, 247);
+            this.lab长寿旗.Name = "lab长寿旗";
+            this.lab长寿旗.Size = new System.Drawing.Size(11, 12);
+            this.lab长寿旗.TabIndex = 11;
+            this.lab长寿旗.Text = "0";
             // 
-            // label22
+            // lab傲来旗
             // 
-            this.label22.AutoSize = true;
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(125, 224);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(11, 12);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "0";
+            this.lab傲来旗.AutoSize = true;
+            this.lab傲来旗.ForeColor = System.Drawing.Color.Red;
+            this.lab傲来旗.Location = new System.Drawing.Point(125, 224);
+            this.lab傲来旗.Name = "lab傲来旗";
+            this.lab傲来旗.Size = new System.Drawing.Size(11, 12);
+            this.lab傲来旗.TabIndex = 12;
+            this.lab傲来旗.Text = "0";
             // 
-            // label26
+            // lab长安旗
             // 
-            this.label26.AutoSize = true;
-            this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(125, 201);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(11, 12);
-            this.label26.TabIndex = 16;
-            this.label26.Text = "0";
+            this.lab长安旗.AutoSize = true;
+            this.lab长安旗.ForeColor = System.Drawing.Color.Red;
+            this.lab长安旗.Location = new System.Drawing.Point(125, 201);
+            this.lab长安旗.Name = "lab长安旗";
+            this.lab长安旗.Size = new System.Drawing.Size(11, 12);
+            this.lab长安旗.TabIndex = 16;
+            this.lab长安旗.Text = "0";
             // 
             // lab人物蓝量
             // 
@@ -217,15 +217,15 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "宠物血量:";
             // 
-            // label19
+            // lab飞行符
             // 
-            this.label19.AutoSize = true;
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(125, 178);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(11, 12);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "0";
+            this.lab飞行符.AutoSize = true;
+            this.lab飞行符.ForeColor = System.Drawing.Color.Red;
+            this.lab飞行符.Location = new System.Drawing.Point(125, 178);
+            this.lab飞行符.Name = "lab飞行符";
+            this.lab飞行符.Size = new System.Drawing.Size(11, 12);
+            this.lab飞行符.TabIndex = 9;
+            this.lab飞行符.Text = "0";
             // 
             // lab宠物蓝量
             // 
@@ -237,15 +237,15 @@
             this.lab宠物蓝量.TabIndex = 9;
             this.lab宠物蓝量.Text = "0";
             // 
-            // label7
+            // lab金币
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(125, 132);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(11, 12);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "0";
+            this.lab金币.AutoSize = true;
+            this.lab金币.ForeColor = System.Drawing.Color.Red;
+            this.lab金币.Location = new System.Drawing.Point(125, 132);
+            this.lab金币.Name = "lab金币";
+            this.lab金币.Size = new System.Drawing.Size(11, 12);
+            this.lab金币.TabIndex = 6;
+            this.lab金币.Text = "0";
             // 
             // label23
             // 
@@ -266,15 +266,15 @@
             this.lab人物血量.TabIndex = 10;
             this.lab人物血量.Text = "0";
             // 
-            // label6
+            // lab摄药香
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(125, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(11, 12);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "0";
+            this.lab摄药香.AutoSize = true;
+            this.lab摄药香.ForeColor = System.Drawing.Color.Red;
+            this.lab摄药香.Location = new System.Drawing.Point(125, 155);
+            this.lab摄药香.Name = "lab摄药香";
+            this.lab摄药香.Size = new System.Drawing.Size(11, 12);
+            this.lab摄药香.TabIndex = 5;
+            this.lab摄药香.Text = "0";
             // 
             // lab宠物血量
             // 
@@ -378,32 +378,32 @@
             this.label11.TabIndex = 4;
             this.label11.Text = "门派:";
             // 
-            // labTitleName
+            // lab窗口名称
             // 
-            this.labTitleName.AutoSize = true;
-            this.labTitleName.Location = new System.Drawing.Point(87, 13);
-            this.labTitleName.Name = "labTitleName";
-            this.labTitleName.Size = new System.Drawing.Size(47, 12);
-            this.labTitleName.TabIndex = 5;
-            this.labTitleName.Text = "label12";
+            this.lab窗口名称.AutoSize = true;
+            this.lab窗口名称.Location = new System.Drawing.Point(87, 13);
+            this.lab窗口名称.Name = "lab窗口名称";
+            this.lab窗口名称.Size = new System.Drawing.Size(41, 12);
+            this.lab窗口名称.TabIndex = 5;
+            this.lab窗口名称.Text = "未获取";
             // 
-            // lab人物门派
+            // lab人物师门
             // 
-            this.lab人物门派.AutoSize = true;
-            this.lab人物门派.Location = new System.Drawing.Point(87, 58);
-            this.lab人物门派.Name = "lab人物门派";
-            this.lab人物门派.Size = new System.Drawing.Size(47, 12);
-            this.lab人物门派.TabIndex = 7;
-            this.lab人物门派.Text = "label14";
+            this.lab人物师门.AutoSize = true;
+            this.lab人物师门.Location = new System.Drawing.Point(87, 58);
+            this.lab人物师门.Name = "lab人物师门";
+            this.lab人物师门.Size = new System.Drawing.Size(41, 12);
+            this.lab人物师门.TabIndex = 7;
+            this.lab人物师门.Text = "未获取";
             // 
             // lab人物名称
             // 
             this.lab人物名称.AutoSize = true;
             this.lab人物名称.Location = new System.Drawing.Point(87, 35);
             this.lab人物名称.Name = "lab人物名称";
-            this.lab人物名称.Size = new System.Drawing.Size(47, 12);
+            this.lab人物名称.Size = new System.Drawing.Size(41, 12);
             this.lab人物名称.TabIndex = 8;
-            this.lab人物名称.Text = "label15";
+            this.lab人物名称.Text = "未获取";
             // 
             // groupBox1
             // 
@@ -443,8 +443,8 @@
             this.ClientSize = new System.Drawing.Size(672, 391);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lab人物名称);
-            this.Controls.Add(this.lab人物门派);
-            this.Controls.Add(this.labTitleName);
+            this.Controls.Add(this.lab人物师门);
+            this.Controls.Add(this.lab窗口名称);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -473,8 +473,8 @@
         private System.Windows.Forms.GroupBox 日志栏;
         private System.Windows.Forms.TextBox textLog;
         private System.Windows.Forms.Label lab宠物蓝量;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lab金币;
+        private System.Windows.Forms.Label lab摄药香;
         private System.Windows.Forms.Label lab宠物血量;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label10;
@@ -487,18 +487,18 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label labTitleName;
-        private System.Windows.Forms.Label lab人物门派;
+        private System.Windows.Forms.Label lab窗口名称;
+        private System.Windows.Forms.Label lab人物师门;
         private System.Windows.Forms.Label lab人物名称;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lab飞行符;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lab长寿旗;
+        private System.Windows.Forms.Label lab傲来旗;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lab长安旗;
+        private System.Windows.Forms.Label lab朱紫旗;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button but挖图;
