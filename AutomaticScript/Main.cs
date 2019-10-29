@@ -207,6 +207,8 @@ namespace AutomaticScript
                 //ci.Capture(new object[] { 1004, 181, 1256, 212, "./Image/人物蓝量.bmp" });
                 //lab人物蓝量.Text = baidu.Ocr_Baidu("./Image/人物蓝量.bmp");
 
+                //宠物忠诚度还未做
+
                 //关闭状态面板
                 mo.TurnOff(new object[] { 1131, 273 });
 
