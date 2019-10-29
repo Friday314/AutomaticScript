@@ -98,7 +98,7 @@
             this.状态栏.Controls.Add(this.label1);
             this.状态栏.Location = new System.Drawing.Point(232, 12);
             this.状态栏.Name = "状态栏";
-            this.状态栏.Size = new System.Drawing.Size(179, 374);
+            this.状态栏.Size = new System.Drawing.Size(179, 292);
             this.状态栏.TabIndex = 0;
             this.状态栏.TabStop = false;
             this.状态栏.Text = "状态栏";
@@ -336,7 +336,7 @@
             this.日志栏.Controls.Add(this.textLog);
             this.日志栏.Location = new System.Drawing.Point(417, 12);
             this.日志栏.Name = "日志栏";
-            this.日志栏.Size = new System.Drawing.Size(246, 374);
+            this.日志栏.Size = new System.Drawing.Size(246, 292);
             this.日志栏.TabIndex = 1;
             this.日志栏.TabStop = false;
             this.日志栏.Text = "日志栏";
@@ -346,7 +346,7 @@
             this.textLog.Location = new System.Drawing.Point(6, 20);
             this.textLog.Multiline = true;
             this.textLog.Name = "textLog";
-            this.textLog.Size = new System.Drawing.Size(234, 348);
+            this.textLog.Size = new System.Drawing.Size(234, 266);
             this.textLog.TabIndex = 0;
             this.textLog.Text = "运行前准备：\r\n1、本软件请以\"管理员模式运行\"\r\n2、本软件在雷电模拟器下开发，请勿使用其他模拟器\r\n     模拟器分辨率请设置成：\r\n     平板模式(1" +
     "280*720)\r\n3、先选择任务再开始软件运行\r\n4、开始运行:Shitf + S\r\n5、停止运行:Shitf + D";
@@ -411,7 +411,7 @@
             this.groupBox1.Controls.Add(this.but师门);
             this.groupBox1.Location = new System.Drawing.Point(12, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(214, 301);
+            this.groupBox1.Size = new System.Drawing.Size(214, 219);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选择任务";
@@ -440,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 391);
+            this.ClientSize = new System.Drawing.Size(672, 310);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lab人物名称);
             this.Controls.Add(this.lab人物师门);

@@ -8,29 +8,29 @@ namespace AutomaticScript
 {
     public class ShowValue
     {
-        public string lab窗口名称="";
-        public string lab人物名称="";
-        public string lab人物师门="";
+        public static string lab窗口名称="";
+        public static string lab人物名称="";
+        public static string lab人物师门="";
 
 
-        public string lab人物血量="";
-        public string lab人物蓝量="";
-        public string lab宠物血量="";
-        public string lab宠物蓝量="";
-        public string lab宠物忠诚="";
+        public static string lab人物血量="";
+        public static string lab人物蓝量="";
+        public static string lab宠物血量="";
+        public static string lab宠物蓝量="";
+        public static string lab宠物忠诚="";
 
 
-        public string lab金币="";
-        public string lab摄药香="";
+        public static string lab金币="";
+        public static string lab摄药香="";
 
 
-        public string lab飞行符="";
-        public string lab长安旗="";
-        public string lab傲来旗="";
-        public string lab长寿旗="";
-        public string lab朱紫旗="";
+        public static string lab飞行符="";
+        public static string lab长安旗="";
+        public static string lab傲来旗="";
+        public static string lab长寿旗="";
+        public static string lab朱紫旗="";
 
 
-        public string textLog="";
+        public static string textLog="";
     }
 }

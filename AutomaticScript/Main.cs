@@ -44,11 +44,6 @@ namespace AutomaticScript
             //注销Id号为100的热键设定
             HotKey.UnregisterHotKey(Handle, 100);
             HotKey.UnregisterHotKey(Handle, 101);
-
-            //创建一个线程用来更新窗口控件
-            Thread showValue = new Thread(_Show);
-            //更新控件参数
-            showValue.Start();
         }
 
         static int _but师门 = 0;
@@ -94,6 +89,11 @@ namespace AutomaticScript
                     {
                         case 100:    //按下的是Shift+S
 
+                            //创建一个线程用来更新窗口控件
+                            Thread showValue = new Thread(_Show);
+                            //更新控件参数
+                            showValue.Start();
+
                             //软开启，界面初始化
                             Initi界面();
                             //人物名称及门派初始化
@@ -117,7 +117,10 @@ namespace AutomaticScript
         }
 
         public void _Show()
-        { }
+        {
+            System.Threading.Thread.Sleep(100);
+            textLog.AppendText(ShowValue.lab窗口名称+"\r\n");
+        }
 
         /// <summary>
         /// 界面初始化
