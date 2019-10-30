@@ -24,9 +24,23 @@ namespace AutomaticScript
         //抓图
         CaptureImage ci = new CaptureImage();
 
+        public static bool showValueIf = false;
+        public static bool showValueLogIf = false;
+
         public AutomaticScript()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
+
+            //创建一个线程用来更新窗口控件
+            Thread showValue = new Thread(_Show);
+            //更新控件参数
+            showValue.Start();
+
+            //创建一个线程用来更新窗口控件
+            Thread showValueLog = new Thread(_Showlog);
+            //更新控件参数
+            showValueLog.Start();
         }
 
         private void AutomaticScript_Load(object sender, EventArgs e)
@@ -89,11 +103,6 @@ namespace AutomaticScript
                     {
                         case 100:    //按下的是Shift+S
 
-                            //创建一个线程用来更新窗口控件
-                            Thread showValue = new Thread(_Show);
-                            //更新控件参数
-                            showValue.Start();
-
                             //软开启，界面初始化
                             Initi界面();
                             //人物名称及门派初始化
@@ -118,8 +127,26 @@ namespace AutomaticScript
 
         public void _Show()
         {
-            System.Threading.Thread.Sleep(100);
-            textLog.AppendText(ShowValue.lab窗口名称+"\r\n");
+            while (true)
+            {
+                if (showValueIf)
+                {
+                     lab窗口名称.Text = ShowValue.lab窗口名称;
+                    showValueIf = false;
+                }
+            }
+        }
+
+        public void _Showlog()
+        {
+            while (true)
+            {
+                if (showValueLogIf)
+                {
+                    textLog.AppendText(ShowValue.textLog + "\r\n");
+                    showValueIf = false;
+                }
+            }
         }
 
         /// <summary>
@@ -137,9 +164,11 @@ namespace AutomaticScript
                 //初始化临界
                 textLog.AppendText(sr.InitCri() + "\r\n");
                 //确认获得窗体名称
-                lab窗口名称.Text = sr.getWindTitle();
+                ShowValue.lab窗口名称 = sr.getWindTitle();
+                showValueIf = true;
                 //窗口绑定
-                textLog.AppendText(sr.bindWindowEx() + "\r\n");
+                ShowValue.textLog=sr.bindWindowEx();
+                showValueLogIf = true;
 
                 i = 1;
             }

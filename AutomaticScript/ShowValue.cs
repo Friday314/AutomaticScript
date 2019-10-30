@@ -8,7 +8,7 @@ namespace AutomaticScript
 {
     public class ShowValue
     {
-        public static string lab窗口名称="";
+        public static string lab窗口名称="111";
         public static string lab人物名称="";
         public static string lab人物师门="";
 

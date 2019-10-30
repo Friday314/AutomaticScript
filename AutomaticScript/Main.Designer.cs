@@ -107,7 +107,7 @@
             // 
             this.lab宠物忠诚.AutoSize = true;
             this.lab宠物忠诚.ForeColor = System.Drawing.Color.Red;
-            this.lab宠物忠诚.Location = new System.Drawing.Point(125, 110);
+            this.lab宠物忠诚.Location = new System.Drawing.Point(119, 110);
             this.lab宠物忠诚.Name = "lab宠物忠诚";
             this.lab宠物忠诚.Size = new System.Drawing.Size(11, 12);
             this.lab宠物忠诚.TabIndex = 2;
@@ -126,7 +126,7 @@
             // 
             this.lab朱紫旗.AutoSize = true;
             this.lab朱紫旗.ForeColor = System.Drawing.Color.Red;
-            this.lab朱紫旗.Location = new System.Drawing.Point(125, 270);
+            this.lab朱紫旗.Location = new System.Drawing.Point(119, 270);
             this.lab朱紫旗.Name = "lab朱紫旗";
             this.lab朱紫旗.Size = new System.Drawing.Size(11, 12);
             this.lab朱紫旗.TabIndex = 9;
@@ -145,7 +145,7 @@
             // 
             this.lab长寿旗.AutoSize = true;
             this.lab长寿旗.ForeColor = System.Drawing.Color.Red;
-            this.lab长寿旗.Location = new System.Drawing.Point(125, 247);
+            this.lab长寿旗.Location = new System.Drawing.Point(119, 247);
             this.lab长寿旗.Name = "lab长寿旗";
             this.lab长寿旗.Size = new System.Drawing.Size(11, 12);
             this.lab长寿旗.TabIndex = 11;
@@ -155,7 +155,7 @@
             // 
             this.lab傲来旗.AutoSize = true;
             this.lab傲来旗.ForeColor = System.Drawing.Color.Red;
-            this.lab傲来旗.Location = new System.Drawing.Point(125, 224);
+            this.lab傲来旗.Location = new System.Drawing.Point(119, 224);
             this.lab傲来旗.Name = "lab傲来旗";
             this.lab傲来旗.Size = new System.Drawing.Size(11, 12);
             this.lab傲来旗.TabIndex = 12;
@@ -165,7 +165,7 @@
             // 
             this.lab长安旗.AutoSize = true;
             this.lab长安旗.ForeColor = System.Drawing.Color.Red;
-            this.lab长安旗.Location = new System.Drawing.Point(125, 201);
+            this.lab长安旗.Location = new System.Drawing.Point(119, 201);
             this.lab长安旗.Name = "lab长安旗";
             this.lab长安旗.Size = new System.Drawing.Size(11, 12);
             this.lab长安旗.TabIndex = 16;
@@ -175,7 +175,7 @@
             // 
             this.lab人物蓝量.AutoSize = true;
             this.lab人物蓝量.ForeColor = System.Drawing.Color.Red;
-            this.lab人物蓝量.Location = new System.Drawing.Point(125, 43);
+            this.lab人物蓝量.Location = new System.Drawing.Point(119, 43);
             this.lab人物蓝量.Name = "lab人物蓝量";
             this.lab人物蓝量.Size = new System.Drawing.Size(11, 12);
             this.lab人物蓝量.TabIndex = 9;
@@ -221,7 +221,7 @@
             // 
             this.lab飞行符.AutoSize = true;
             this.lab飞行符.ForeColor = System.Drawing.Color.Red;
-            this.lab飞行符.Location = new System.Drawing.Point(125, 178);
+            this.lab飞行符.Location = new System.Drawing.Point(119, 178);
             this.lab飞行符.Name = "lab飞行符";
             this.lab飞行符.Size = new System.Drawing.Size(11, 12);
             this.lab飞行符.TabIndex = 9;
@@ -231,7 +231,7 @@
             // 
             this.lab宠物蓝量.AutoSize = true;
             this.lab宠物蓝量.ForeColor = System.Drawing.Color.Red;
-            this.lab宠物蓝量.Location = new System.Drawing.Point(125, 88);
+            this.lab宠物蓝量.Location = new System.Drawing.Point(119, 88);
             this.lab宠物蓝量.Name = "lab宠物蓝量";
             this.lab宠物蓝量.Size = new System.Drawing.Size(11, 12);
             this.lab宠物蓝量.TabIndex = 9;
@@ -241,7 +241,7 @@
             // 
             this.lab金币.AutoSize = true;
             this.lab金币.ForeColor = System.Drawing.Color.Red;
-            this.lab金币.Location = new System.Drawing.Point(125, 132);
+            this.lab金币.Location = new System.Drawing.Point(119, 132);
             this.lab金币.Name = "lab金币";
             this.lab金币.Size = new System.Drawing.Size(11, 12);
             this.lab金币.TabIndex = 6;
@@ -260,7 +260,7 @@
             // 
             this.lab人物血量.AutoSize = true;
             this.lab人物血量.ForeColor = System.Drawing.Color.Red;
-            this.lab人物血量.Location = new System.Drawing.Point(125, 22);
+            this.lab人物血量.Location = new System.Drawing.Point(119, 22);
             this.lab人物血量.Name = "lab人物血量";
             this.lab人物血量.Size = new System.Drawing.Size(11, 12);
             this.lab人物血量.TabIndex = 10;
@@ -270,7 +270,7 @@
             // 
             this.lab摄药香.AutoSize = true;
             this.lab摄药香.ForeColor = System.Drawing.Color.Red;
-            this.lab摄药香.Location = new System.Drawing.Point(125, 155);
+            this.lab摄药香.Location = new System.Drawing.Point(119, 155);
             this.lab摄药香.Name = "lab摄药香";
             this.lab摄药香.Size = new System.Drawing.Size(11, 12);
             this.lab摄药香.TabIndex = 5;
@@ -280,7 +280,7 @@
             // 
             this.lab宠物血量.AutoSize = true;
             this.lab宠物血量.ForeColor = System.Drawing.Color.Red;
-            this.lab宠物血量.Location = new System.Drawing.Point(125, 65);
+            this.lab宠物血量.Location = new System.Drawing.Point(119, 65);
             this.lab宠物血量.Name = "lab宠物血量";
             this.lab宠物血量.Size = new System.Drawing.Size(11, 12);
             this.lab宠物血量.TabIndex = 4;
