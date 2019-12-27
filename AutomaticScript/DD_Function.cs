@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace AutomaticScript
 {
-    public class SysReg : DmReg
+    class DD_Function : DmReg
     {
+
+        /// 全局静态变量
+        /// 窗口句柄
+        /// </summary>
+        public static int _HWND;
+
         /// <summary>
         /// 获得插件版本
         /// </summary>
@@ -19,7 +25,7 @@ namespace AutomaticScript
         }
 
         /// <summary>
-        /// 基础信息初始
+        /// 网络注册
         /// </summary>
         /// <returns>返回注册信息</returns>
         public string Sysreg()
@@ -59,12 +65,6 @@ namespace AutomaticScript
             return "初始化临界区失败";
         }
 
-        /// <summary>
-        /// 全局静态变量
-        /// 窗口句柄
-        /// </summary>
-        public static int _HWND;
-
         ///// <summary>
         ///// 获取鼠标所在位置窗口句柄
         ///// </summary>
@@ -102,7 +102,7 @@ namespace AutomaticScript
             // 窗口前台绑定测试
             //int i = dd.DM.BindWindowEx(SysReg._HWND, "normal", "normal", "normal", "", 0);
 
-            int i = Convert.ToInt32(ddr("BindWindowEx", new object[] { SysReg._HWND, "normal", "normal", "normal", "", 0 }));
+            int i = Convert.ToInt32(ddr("BindWindowEx", new object[] { _HWND, "normal", "normal", "normal", "", 0 }));
             System.Threading.Thread.Sleep(1000);
             if (i != 1)
             {
@@ -124,6 +124,37 @@ namespace AutomaticScript
                 return "窗口未解绑，请再次执行解绑";
             }
             return "窗口已解绑，可以关闭软件";
+        }
+
+        /// <summary>
+        /// 鼠标左键点击
+        /// </summary>
+        public void LeftClick()
+        {
+            dd("LeftClick");
+        }
+
+        /// <summary>
+        /// 鼠标移动到指定坐标
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        public void MoveTo(int x, int y)
+        {
+            Convert.ToInt32(ddr("MoveTo", new object[] { x, y }));
+        }
+
+        /// <summary>
+        /// 在指定范围类截图
+        /// </summary>
+        /// <param name="x1"></param>
+        /// <param name="y1"></param>
+        /// <param name="x2"></param>
+        /// <param name="y2"></param>
+        public void Capture(int x1, int y1, int x2, int y2)
+        {
+            dd("Capture", new object[] { x1, y1, x2, y2 });
+            System.Threading.Thread.Sleep(300);
         }
     }
 }

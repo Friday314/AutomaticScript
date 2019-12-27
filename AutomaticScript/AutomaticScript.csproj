@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="BaiDuAPI.cs" />
     <Compile Include="CaptureImage.cs" />
+    <Compile Include="DD_Function.cs" />
     <Compile Include="DmReg.cs" />
     <Compile Include="HotKey.cs" />
     <Compile Include="InitiPackage.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShowValue.cs" />
-    <Compile Include="SysReg.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

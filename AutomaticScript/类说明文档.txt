@@ -1,0 +1,57 @@
+DmReg 类 注册调用大漠
+	大漠免注册加载
+
+	# 调用大漠，无返回值
+	dd(大漠函数)
+
+	# 调用大漠，无返回值，带参
+	dd(大漠函数，参数)
+
+	# 调用大漠，有返回值
+	ddr(大漠函数)
+
+	# 调用大漠，有返回值,带参
+	ddr(大漠函数，参数)
+
+BaiDuAPI 类 百度API文字识别
+	# 通用文字识别，图片地址
+	Ocr_Baidu(string imgPath)
+
+	# 高精度文字势必，图片地址
+	Ocr_Acc_BaiDu(string imgPath)
+
+DD_Function 类 继承：DmReg 大漠全部方法
+	# 全局变量 窗口句柄
+	static int _HWND;
+
+	# 获取插件版本号
+	Ver()
+
+	# 网络注册
+	Sysreg()
+
+	# 初始化临界
+	InitCri()
+
+	# 获取鼠标所在位置程序的窗口句柄
+	Hwnd()
+
+	# 获取窗口标题
+	getWindTitle()
+
+	# 窗口绑定
+	bindWindowEx()
+
+	# 窗口解绑
+	UnBindWindow()
+
+	# 鼠标左键点击
+	LeftClick()
+
+	# 鼠标移动，坐标x，坐标y
+	MoveTo(int x, int y)
+
+	# 在指定范围内截图
+	Capture(int x1, int y1, int x2, int y2)
+
+HotKey 类 定义程序快捷键

@@ -13,16 +13,11 @@ namespace AutomaticScript
 {
     public partial class AutomaticScript : Form
     {
-        //创建大漠对象
-        DmReg dr = new DmReg();
         //百度API
         BaiDuAPI baidu = new BaiDuAPI();
-        //基础信息初始
-        SysReg sr = new SysReg();
-        //移动打开
-        MoveOpen mo = new MoveOpen();
-        //抓图
-        CaptureImage ci = new CaptureImage();
+
+        //DD 函数
+        DD_Function df = new DD_Function();
 
         public static bool showValueIf = false;
         public static bool showValueLogIf = false;
@@ -31,16 +26,6 @@ namespace AutomaticScript
         {
             InitializeComponent();
             Control.CheckForIllegalCrossThreadCalls = false;
-
-            //创建一个线程用来更新窗口控件
-            Thread showValue = new Thread(_Show);
-            //更新控件参数
-            showValue.Start();
-
-            //创建一个线程用来更新窗口控件
-            Thread showValueLog = new Thread(_Showlog);
-            //更新控件参数
-            showValueLog.Start();
         }
 
         private void AutomaticScript_Load(object sender, EventArgs e)
@@ -106,17 +91,12 @@ namespace AutomaticScript
                             //软开启，界面初始化
                             Initi界面();
                             //人物名称及门派初始化
-                            Initi人物();
-                            //人物状态初始化
-                            Initi人物状态();
-                            //宠物状态初始化
-                            Initi宠物状态();
 
                             break;
                         case 101:    //按下的是Shift+D
 
                             //窗口解绑
-                            textLog.AppendText(sr.UnBindWindow());
+                            textLog.AppendText(df.UnBindWindow());
 
                             break;
                     }
@@ -158,100 +138,17 @@ namespace AutomaticScript
             if (i == 0)
             {
                 //输出版本号
-                textLog.AppendText("\r\n插件版本:" + sr.Ver() + "\r\n");
+                textLog.AppendText("\r\n插件版本:" + df.Ver() + "\r\n");
                 //网络注册
-                textLog.AppendText(sr.Sysreg().ToString() + "\r\n");
+                textLog.AppendText(df.Sysreg().ToString() + "\r\n");
                 //初始化临界
-                textLog.AppendText(sr.InitCri() + "\r\n");
+                textLog.AppendText(df.InitCri() + "\r\n");
                 //确认获得窗体名称
-                ShowValue.lab窗口名称 = sr.getWindTitle();
+                ShowValue.lab窗口名称 = df.getWindTitle();
                 showValueIf = true;
                 //窗口绑定
-                ShowValue.textLog=sr.bindWindowEx();
+                ShowValue.textLog=df.bindWindowEx();
                 showValueLogIf = true;
-
-                i = 1;
-            }
-        }
-
-        /// <summary>
-        /// 人物初始化
-        /// </summary>
-        public void Initi人物()
-        {
-            int i = 0;
-            if (i == 0)
-            {
-                //获得人物名称及门派
-                mo.Open人物属性();
-
-                //截图 人物名称
-                ci.Capture(new object[] { 200, 94, 376, 127, "./Image/人物名称.bmp" });
-                //百度识字
-                lab人物名称.Text = baidu.Ocr_Baidu("./Image/人物名称.bmp");
-                // 截图 人物门派
-                ci.Capture(new object[] { 152, 157, 193, 284, "./Image/人物门派.bmp" });
-                //百度识字
-                lab人物师门.Text = baidu.Ocr_Baidu("./Image/人物门派.bmp");
-
-                //关闭人物属性面板
-                mo.TurnOff(new object[] { 1073, 52 });
-
-                i = 1;
-            }
-        }
-
-        /// <summary>
-        /// 人物状态初始化
-        /// </summary>
-        public void Initi人物状态()
-        {
-            int i = 0;
-            if (i == 0)
-            {
-                mo.Open人物状态();
-
-                //截图 人物血量
-                ci.Capture(new object[] { 1001, 151, 1223, 183, "./Image/人物血量.bmp" });
-                lab人物血量.Text = baidu.Ocr_Baidu("./Image/人物血量.bmp");
-
-                //截图 人物蓝量
-                ci.Capture(new object[] { 1004, 181, 1256, 212, "./Image/人物蓝量.bmp" });
-                lab人物蓝量.Text = baidu.Ocr_Baidu("./Image/人物蓝量.bmp");
-
-                //关闭状态面板
-                mo.TurnOff(new object[] { 1131, 273 });
-
-                i = 1;
-            }
-        }
-
-        /// <summary>
-        /// 宠物状态初始化
-        /// </summary>
-        public void Initi宠物状态()
-        {
-            int i = 0;
-            if (i == 0)
-            {
-                mo.Open宠物状态();
-
-                //截图 宠物血量
-                ci.Capture(new object[] { 810, 151, 1043, 183, "./Image/宠物血量.bmp" });
-                lab宠物血量.Text = baidu.Ocr_Baidu("./Image/宠物血量.bmp");
-
-                //截图 宠物蓝量
-                ci.Capture(new object[] { 812, 182, 1028, 212, "./Image/宠物蓝量.bmp" });
-                lab宠物蓝量.Text = baidu.Ocr_Baidu("./Image/宠物蓝量.bmp");
-
-                //截图 人物蓝量
-                //ci.Capture(new object[] { 1004, 181, 1256, 212, "./Image/人物蓝量.bmp" });
-                //lab人物蓝量.Text = baidu.Ocr_Baidu("./Image/人物蓝量.bmp");
-
-                //宠物忠诚度还未做
-
-                //关闭状态面板
-                mo.TurnOff(new object[] { 1131, 273 });
 
                 i = 1;
             }
